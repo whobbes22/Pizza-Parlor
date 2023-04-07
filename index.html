@@ -7,6 +7,41 @@
   <title>Pizza Parlor</title>
 </head>
 <body>
-  
+  <h2>Joe's Pizza Place</h2>
+  <p>Fill out the form below to get your Pizza</p>
+  <form id="pizza">
+    <p>Meat and Cheese</p>
+    <input type="checkbox" id="cheese" value="cheese" name="topping" checked required>
+    <label for="cheese">Cheese</label>
+    <input type="checkbox" id="extraCheese" value="extraCheese" name="topping">
+    <label for="extraCheese">Extra Cheese</label>
+    <input type="checkbox" id="pepperoni" value="pepperoni" name="topping">
+    <label for="pepperoni">Pepperoni</label>
+    <input type="checkbox" id="sausage" value="sausage" name="topping">
+    <label for="sausage">Sausage</label>
+    <input type="checkbox" id="bacon" value="bacon" name="topping">
+    <label for="bacon">Bacon</label>
+    <input type="checkbox" id="chicken" value="chicken" name="topping">
+    <label for="chicken">Chicken</label>
+    <p>Vegetables and Fruit</p>
+    <input type="checkbox" id="onions" value="onions" name="topping">
+    <label for="onions">Onions</label>
+    <input type="checkbox" id="peppers" value="peppers" name="topping">
+    <label for="peppers">Bell Peppers</label>
+    <input type="checkbox" id="blackOlives" value="blackOlives" name="topping">
+    <label for="blackOlives">Black Olives</label>
+    <input type="checkbox" id="mushrooms" value="mushrooms" name="topping">
+    <label for="mushrooms">Mushrooms</label>
+    <input type="checkbox" id="tomatoBasil" value="tomatoBasil" name="topping">
+    <label for="tomatoBasil">Tomato and Basil</label>
+    <input type="checkbox" id="pineapple" value="pineapple" name="topping">
+    <label for="pineapple">Pineapple</label>
+    <input type="checkbox" id="pesto" value="pesto" name="topping">
+    <label for="pesto">Pesto</label>
+    <br><br>
+    <button type="submit" id="buyNow" class="btn-primary">Buy Pizza</button>
+  </form>
+
+  <h3>Current Balance: <span id="balance"></span></h2>
 </body>
 </html>
