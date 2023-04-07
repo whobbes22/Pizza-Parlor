@@ -4,7 +4,7 @@
 
 
 #title{
-  text-align: center;
+background-color: rgb(0, 255, 191);
 }
 
 body{
@@ -12,12 +12,33 @@ body{
   color: rgba(238, 238, 238, 0.987);
   margin-left: 10%;
   margin-right: 10%;
+  text-align: center;
 }
 
 .column {
   float: left;
-  padding: 10px;
+  padding-left: 2%;
+  padding-right: 2%;
   text-align: center;
   margin-left: 5%;
-  margin-right: 5%;
+  margin-right: 2%;
+}
+
+
+
+.left, .right {
+ background-color: green;
+}
+
+#pizza-picture{
+  float: left;
+  object-fit: cover;
+  /* 282x 258 */
+  padding-right: 282px;
+  padding-bottom: 258px;
+  margin-top: 2%;
+  margin-left: 10%;
+
+  background-image: url("imgs/pizzaBase.png");
+  background-color: blue;
 }

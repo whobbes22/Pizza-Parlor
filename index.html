@@ -13,7 +13,9 @@
     <h2>Joe's Pizza Place</h2>
     <p>Fill out the form below to build your very own Pizza</p>
   </div>
+  <div id="mainForm">
   <form id="pizza">
+    <div id="pizzaSizeQuestion">
     <p>Select your Pizza Size</p>
     <label>
       <input type="radio" name="size" value="small">
@@ -32,6 +34,8 @@
       <input type="radio" name="size" value="extraLarge">
       Extra Large - 16 in
     </label>
+  </div>
+  <div id="pizzaSauceQuestion">
     <p>Select Pizza Sauce</p>
     <label>
       <input type="radio" name="sauce" value="tomatoSauce" checked>
@@ -50,6 +54,8 @@
       <input type="radio" name="sauce" value="ranchSauce">
       Refreshing Ranch
     </label>
+  </div>
+  <br>
     <div id="meat" class="left column">
       <h3>Meat and Cheese</h3>
       <p>Extra Cheese?</p>
@@ -147,9 +153,14 @@
       </label>
     </div>
     <br>
-    <button type="submit" id="buyNow" class="btn-primary">Buy Pizza</button>
   </form>
-  <h3>Current Balance: <span id="balance"></span></h2>
+  </div>
+  <div id="pizza-picture"></div>
+  <div>
+    <button type="submit" id="buyNow" class="btn-primary">Buy Pizza</button>
+    <h3>Current Balance: <span id="balance"></span></h2>
+  </div>
+
 </body>
 
 </html>
