@@ -9,8 +9,10 @@
 </head>
 
 <body>
-  <h2>Joe's Pizza Place</h2>
-  <p>Fill out the form below to build your very own Pizza</p>
+  <div id="title">
+    <h2>Joe's Pizza Place</h2>
+    <p>Fill out the form below to build your very own Pizza</p>
+  </div>
   <form id="pizza">
     <p>Select your Pizza Size</p>
     <label>
@@ -48,7 +50,7 @@
       <input type="radio" name="sauce" value="ranchSauce">
       Refreshing Ranch
     </label>
-    <div id="meat">
+    <div id="meat" class="left column">
       <h3>Meat and Cheese</h3>
       <p>Extra Cheese?</p>
       <label>
@@ -96,7 +98,7 @@
         No
       </label>
     </div>
-    <div id="vegetables">
+    <div id="vegetables" class="right column">
       <h3>Vegetables</h3>
       <p>Onions?</p>
       <label>

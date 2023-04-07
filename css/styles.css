@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+
+#title{
+  text-align: center;
+}
+
+body{
+  background-color:rgba(6, 2, 2, 0.895);
+  color: rgba(238, 238, 238, 0.987);
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
