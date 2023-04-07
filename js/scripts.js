@@ -16,3 +16,15 @@ Pizza.prototype.howMuch = function(){
 }
 
 // Ui logic
+let pizza;
+function handleBuyPizza(event){
+  event.preventDefault();
+  const size = document.querySelector("input[name='size']:checked").value;
+  const sauce = document.querySelector("input[name='sauce']:checked").value;
+  const toppings = document.querySelectorAll("#topping[type='checkbox']:checked");
+  console.log(size,sauce,toppings)
+  //pizza = new Pizza();
+}
+window.addEventListener("load", function(){
+  document.querySelector("#buyNow").addEventListener("click", handleBuyPizza);
+})
