@@ -1,8 +1,8 @@
-# _Pizza-Parlor_
+# _Pizza Parlor_
 
-#### By **Joseph Wahbeh**_
+#### By _**Joseph Wahbeh**_
 
-#### Application displaying an input form for building your very own Pizza_
+#### Application displaying an input form for building your very own Pizza
 
 ## Technologies Used
 
