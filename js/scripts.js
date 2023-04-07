@@ -4,7 +4,7 @@ function Pizza(siz,sau,top){
 this.toppings = top;
 this.size = siz;
 this.sauce = sau;
-this.cost = 0;
+this.cost = 5;
 }
 
 Pizza.prototype.howMuch = function(){
@@ -16,15 +16,42 @@ Pizza.prototype.howMuch = function(){
 }
 
 // Ui logic
-let pizza;
+let pizza; // global variable
+
 function handleBuyPizza(event){
   event.preventDefault();
+  
   const size = document.querySelector("input[name='size']:checked").value;
   const sauce = document.querySelector("input[name='sauce']:checked").value;
-  const toppings = document.querySelectorAll("#topping[type='checkbox']:checked");
-  console.log(size,sauce,toppings)
-  //pizza = new Pizza();
+  let combinedTopping =[]
+  combinedTopping = combineToppings();
+  pizza = new Pizza(size,sauce,combinedTopping)
+  displayPizza(pizza);
+  console.log(pizza)
+
 }
+
+function displayPizza(thePizza){
+  document.querySelector("#balance").innerText = thePizza.howMuch();
+}
+
+function combineToppings(){
+  const combinedTopping = [];
+  combinedTopping.push(document.querySelector("input[name='extraCheese']:checked").value);
+  combinedTopping.push(document.querySelector("input[name='pepperoni']:checked").value);
+  combinedTopping.push(document.querySelector("input[name='sausage']:checked").value);
+  combinedTopping.push(document.querySelector("input[name='bacon']:checked").value);
+  combinedTopping.push(document.querySelector("input[name='chicken']:checked").value);
+  combinedTopping.push(document.querySelector("input[name='onions']:checked").value);
+  combinedTopping.push(document.querySelector("input[name='bellPeppers']:checked").value);
+  combinedTopping.push(document.querySelector("input[name='blackOlives']:checked").value);
+  combinedTopping.push(document.querySelector("input[name='mushrooms']:checked").value);
+  combinedTopping.push( document.querySelector("input[name='tomatoBasil']:checked").value);
+
+  return combinedTopping;
+}
+
+
 window.addEventListener("load", function(){
   document.querySelector("#buyNow").addEventListener("click", handleBuyPizza);
 })
