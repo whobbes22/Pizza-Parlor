@@ -1,5 +1,4 @@
 // buisness logic
-
 function Pizza(siz,sau,top){
 this.toppings = top;
 this.size = siz;
@@ -25,7 +24,6 @@ Pizza.prototype.howMuch = function(){
     case("marinaraSauce"):
     this.cost +=.25;
   }
-  console.log(this.cost);
   let toppingCost = 0;
   this.toppings.forEach(function(key){
     console.log("key ",parseInt(key) === 1);
@@ -35,7 +33,6 @@ Pizza.prototype.howMuch = function(){
     }
   });
   this.cost += toppingCost;
-  console.log(this.cost);
   return this.cost;
 }
 
@@ -44,15 +41,12 @@ let pizza; // global variable
 
 function handleBuyPizza(event){
   event.preventDefault();
-  
   const size = document.querySelector("input[name='size']:checked").value;
   const sauce = document.querySelector("input[name='sauce']:checked").value;
   let combinedTopping =[]
   combinedTopping = combineToppings();
   pizza = new Pizza(size,sauce,combinedTopping)
   displayPizza(pizza);
-  console.log(pizza)
-
 }
 
 function displayPizza(thePizza){
@@ -74,7 +68,6 @@ function combineToppings(){
 
   return combinedTopping;
 }
-
 
 window.addEventListener("load", function(){
   document.querySelector("#buyNow").addEventListener("click", handleBuyPizza);
