@@ -4,22 +4,20 @@
 
 
 #title{
-background-color: rgb(0, 255, 191);
+background-color: rgb(5, 68, 52);
 }
 
 #mainForm{
  padding-bottom: 30%;
  margin-right:25%;
  margin-left:25%;
-
-  background-color: aqua;
 }
 
 body{
   background-color:rgba(6, 2, 2, 0.895);
   color: rgba(238, 238, 238, 0.987);
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
   text-align: center;
 }
 
@@ -36,26 +34,28 @@ body{
   margin-top: 1%;
   margin-left:40%;
   margin-right:30%;
-  background-color: red;
 }
 
 
 .left, .right {
- background-color: green;
 }
 
-#pizza-picture{
-    
+.pizza-picture{
   float: left;
   object-fit: cover;
   margin-top: 1%;
-  margin-left:42%;
+  margin-left:12%;
   /* 282x 258 */
   padding-right: 282px;
   padding-bottom: 258px;
+}
 
-
-  background-image: url("imgs/pizzaBase.png");
+#pizza-chicken{
+  background-image: url("imgs/chickenPizza.png");
+}
+#pizza-tomatoes{
+  background-image: url("imgs/pizzaTomatoes.png");
+}
+#pizza-pepperoni{
   background-image: url("imgs/pepperoniPizza.png");
-  background-color: blue;
 }
