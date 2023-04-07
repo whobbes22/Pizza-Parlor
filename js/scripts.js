@@ -8,9 +8,33 @@ this.cost = 5;
 }
 
 Pizza.prototype.howMuch = function(){
-  console.log(this.size,this.toppings);
-  this.cost = this.size*1.25;
-  this.cost += this.toppings.length;
+  this.cost = 5;
+  switch(this.size){
+    case ("extraLarge"):
+      this.cost += 1.5;
+    case ("large"):
+        this.cost += 1;  
+    case ("medium"):
+      this.cost += 1;
+  } 
+  switch(this.sauce){
+    case("alfredoSauce"):
+    case("ranchSauce"):
+    this.cost += .75;
+    break;
+    case("marinaraSauce"):
+    this.cost +=.25;
+  }
+  console.log(this.cost);
+  let toppingCost = 0;
+  this.toppings.forEach(function(key){
+    console.log("key ",parseInt(key) === 1);
+    if(parseInt(key) === 1){
+      //console.log(this) // gives url??  can not do "this.cost" in loop?
+      toppingCost += .5;
+    }
+  });
+  this.cost += toppingCost;
   console.log(this.cost);
   return this.cost;
 }
@@ -32,7 +56,7 @@ function handleBuyPizza(event){
 }
 
 function displayPizza(thePizza){
-  document.querySelector("#balance").innerText = thePizza.howMuch();
+  document.querySelector("#balance").innerText = "$"+ thePizza.howMuch();
 }
 
 function combineToppings(){
