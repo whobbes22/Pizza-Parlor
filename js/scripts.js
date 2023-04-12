@@ -37,7 +37,6 @@ Pizza.prototype.howMuch = function(){
 }
 
 // Ui logic
-let pizza; // global variable
 
 function handleBuyPizza(event){
   event.preventDefault();
@@ -45,7 +44,7 @@ function handleBuyPizza(event){
   const sauce = document.querySelector("input[name='sauce']:checked").value;
   let combinedTopping =[]
   combinedTopping = combineToppings();
-  pizza = new Pizza(size,sauce,combinedTopping)
+  let pizza = new Pizza(size,sauce,combinedTopping)
   displayPizza(pizza);
 }
 
