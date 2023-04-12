@@ -1,4 +1,5 @@
 // buisness logic
+
 function Pizza(siz,sau,top){
 this.toppings = top;
 this.size = siz;
