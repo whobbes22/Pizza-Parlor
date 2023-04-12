@@ -20,4 +20,10 @@ Describe Pizza.prototype.addName();
 
 code: "it will add a name to the pizza constructor"
 test:   const pizza = new Pizza("small","alfredoSauce",[1,0,0,0,1,1,1,0,0,1]);
-        pizza.addName("joe);
+        pizza.addName("joeWahbeh");
+output: "joeWahbeh"
+
+code: "will display 'invalid name' if the addName is less then 4 characters long"
+test:   const pizza = new Pizza("small","alfredoSauce",[1,0,0,0,1,1,1,0,0,1]);
+        pizza.addName("joe");
+output: "invalid name"

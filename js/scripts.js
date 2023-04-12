@@ -7,6 +7,11 @@ this.sauce = sau;
 this.cost = 5;
 }
 
+Pizza.prototype.addName = function(name){
+  this.pizzaName = name;
+  return name;
+}
+
 Pizza.prototype.howMuch = function(){
   this.cost = 5;
   switch(this.size){
