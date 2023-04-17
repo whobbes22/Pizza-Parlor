@@ -39,6 +39,11 @@ test:   const pizza = new Pizza("extraLarge","alfredoSauce",[0,0,0,0,0,0,0,0,0,0
 output: 5.75
 
 code:   "will add 3$ to price if 'Large' is selected"
-test:   const pizza = new Pizza("Large","alfredoSauce",[0,0,0,0,0,0,0,0,0,0]);
+test:   const pizza = new Pizza("large","alfredoSauce",[0,0,0,0,0,0,0,0,0,0]);
         pizza.howMuch();
 output: 3.75
+
+code:   "will add 2$ to price if 'medium' is selected"
+test:   const pizza = new Pizza("medium","alfredoSauce",[0,0,0,0,0,0,0,0,0,0]);
+        pizza.howMuch();
+output: 2.75
