@@ -32,3 +32,8 @@ code: "will add 100$ to price if size is not selected on a pizza"
 test:   const pizza = new Pizza("ha not an actual size","alfredoSauce",[1,0,0,0,1,1,1,0,0,1]);
         pizza.howMuch();
 output: 103.25
+
+code:   "will add 5$ to price if 'extraLarge' is selected"
+test:   const pizza = new Pizza("extraLarge","alfredoSauce",[0,0,0,0,0,0,0,0,0,0]);
+        pizza.howMuch();
+output: 5.75
