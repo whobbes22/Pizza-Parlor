@@ -26,7 +26,7 @@ Pizza.prototype.howMuch = function(){
       this.cost += 3;
       break;  
     case ("medium"):
-      this.cost += 1;
+      this.cost += 2;
       break;
       default:
         this.cost = 100;
