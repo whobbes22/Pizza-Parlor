@@ -26,6 +26,8 @@ Pizza.prototype.howMuch = function(){
     case ("medium"):
       this.cost += 1;
       break;
+      default:
+        this.cost = 100;
   } 
   switch(this.sauce){
     case("alfredoSauce"):
