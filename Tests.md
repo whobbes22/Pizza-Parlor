@@ -27,3 +27,8 @@ code: "will display 'invalid name' if the addName is less then 4 characters long
 test:   const pizza = new Pizza("small","alfredoSauce",[1,0,0,0,1,1,1,0,0,1]);
         pizza.addName("joe");
 output: "invalid name"
+
+code: "will add 100$ to price if size is not selected on a pizza"
+test:   const pizza = new Pizza("ha not an actual size","alfredoSauce",[1,0,0,0,1,1,1,0,0,1]);
+        pizza.howMuch();
+output: 103.25
