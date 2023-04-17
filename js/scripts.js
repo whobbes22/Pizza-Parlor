@@ -4,7 +4,7 @@ function Pizza(siz,sau,top){
 this.toppings = top;
 this.size = siz;
 this.sauce = sau;
-this.cost = 5;
+this.cost = 0;
 }
 
 Pizza.prototype.addName = function(name){
@@ -46,7 +46,6 @@ Pizza.prototype.howMuch = function(){
   this.toppings.forEach(function(key){
     console.log("key ",parseInt(key) === 1);
     if(parseInt(key) === 1){
-      //console.log(this) // gives url??  can not do "this.cost" in loop?
       toppingCost += .5;
     }
   });

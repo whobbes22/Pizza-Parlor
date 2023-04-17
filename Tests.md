@@ -6,7 +6,7 @@ Describe Pizza()
 
 code: "it should return a pizza object with toppings and size
 Tests: const pizza = new Pizza("small","alfredoSauce",[1,0,0,0,1,1,1,0,0,1]);
-Output: pizza {size: "small",sauce: "alfredoSauce", toppings:[1,0,0,0,1,1,1,0,0,1]}
+Output: pizza {size: "small",sauce: "alfredoSauce", toppings:[1,0,0,0,1,1,1,0,0,1], cost: 0}
 
 
 Describe Pizza.prototype.howMuch()
