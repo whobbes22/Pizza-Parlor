@@ -17,10 +17,11 @@ Pizza.prototype.addName = function(name){
 }
 
 Pizza.prototype.howMuch = function(){
-  this.cost = 5;
+  this.cost = 0;
   switch(this.size){
     case ("extraLarge"):
-      this.cost += 3.5;
+      this.cost += 5;
+      break;
     case ("large"):
         this.cost += 1;  
     case ("medium"):
