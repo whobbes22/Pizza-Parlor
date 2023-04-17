@@ -9,18 +9,23 @@ this.cost = 5;
 
 Pizza.prototype.addName = function(name){
   this.pizzaName = name;
-  return name;
+  if(name.length <5){
+    return "invalid name";
+  } else {
+    return name;
+  }
 }
 
 Pizza.prototype.howMuch = function(){
   this.cost = 5;
   switch(this.size){
     case ("extraLarge"):
-      this.cost += 1.5;
+      this.cost += 3.5;
     case ("large"):
         this.cost += 1;  
     case ("medium"):
       this.cost += 1;
+      break;
   } 
   switch(this.sauce){
     case("alfredoSauce"):
